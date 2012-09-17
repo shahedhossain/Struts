@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Context>
+<Context>
+
+	<Resource name="jdbc/MyRDPWAR" 
+              auth="Container"
+              type="javax.sql.DataSource" 
+              username="prime" 
+              password="prime"
+              driverClassName="com.mysql.jdbc.Driver"
+              url="jdbc:mysql://localhost:3306/prime?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8"
+              validationQuery="SELECT 1"
+              maxActive="-1" 
+              maxIdle="-1"/>
+              
+	<Resource name="mail/RDPmail"
+              auth="Container"
+              type="javax.mail.Session"
+              password="rdpgroup"              
+              mail.smtp.host="localhost"
+              mail.smtp.port="25"
+              mail.smtp.user="shahed@localhost"
+              mail.transport.protocol="smtp"/>  
+             
+</Context>
